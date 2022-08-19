@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Baloo+Bhai+2&family=Outfit&family=The+Nautigal:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Anek Malayalam', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(207, 252, 215);
+}
+/* .navbar-toggler{
+background-color: rgb(30, 30, 247);
+} */
+
+.main_container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+#array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  
+  padding: 0px 10px;
+ 
+}
+.arrBar {
+    margin: 0 0.05rem;
+    
+     background-color: rgb(25, 114, 28);
+   }
+   #Time_Worst,#Time_Average,#Time_Best,#Space_Worst{
+    color: rgb(25, 114, 28);;
+   }
+   @media screen and (max-width: 800px) {
+    .main_container{
+        display: block;
+    }
+    #Info_Cont1,#Info_Cont2{
+        display: none;
+    }
+    
+   }
+   .lead{
+    font-size: 30px;
+    text-align: center;
+    font-size: bold;
+   }
+   

@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visual</title>
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/55a73b018d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler bg-success"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="row container-fluid">
+                <div class="col-6">
+                  <div class="my-3">
+                    <p class="d-inline-block">Size of the Array:</p>
+                    <input
+                      type="range"
+                      name="arr_size"
+                      id="arr_size"
+                      min="20"
+                      max="150"
+                      step="1"
+                      value="50"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <p class="d-inline-block">Speed of the algorithm:</p>
+                    <input
+                      id="arr_speed"
+                      type="range"
+                      min="1"
+                      max="5"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+  
+                  <button id="arr_generate" class="btn btn-outline-success">
+                    Generate New Array!
+                  </button>
+                </div>
+               
+                  <div class="header_right col-6">
+                    <p class="lead">Sorting visualizer</p>
+  
+                    <div class="algos">
+                      <button class="btn btn-outline-success mb-3 me-2">
+                        Bubble
+                      </button>
+                      <button class="btn btn-outline-success mb-3 me-2">
+                        Selection
+                      </button>
+                      <button class="btn btn-outline-success mb-3 me-2">
+                        Insertion
+                      </button>
+                      <button class="btn btn-outline-success mb-3 me-2">
+                        Merge
+                      </button>
+                      <button class="btn btn-outline-success mb-3 me-2">
+                        Quick
+                      </button>
+                      <button
+                        class="btn btn-outline-success mb-3 me-2"
+                        style="margin-right: 0px"
+                      >
+                        Heap
+                      </button>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="main_container ">
+          <div id="Info_Cont1" class="ms-4">
+            <h4>TIME COMPLEXITY</h4>
+  
+            <div
+              class="Complexity_Containers"
+              id="Time_Complexity_Types_Container"
+            >
+              <div class="Pair_Definitions">
+                <p class="Sub_Heading">Worst case:</p>
+                <p id="Time_Worst"></p>
+              </div>
+  
+              <div class="Pair_Definitions">
+                <p class="Sub_Heading">Average case:</p>
+                <p id="Time_Average"></p>
+              </div>
+  
+              <div class="Pair_Definitions">
+                <p class="Sub_Heading">Best case:</p>
+                <p id="Time_Best"></p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="array_container"></div>
+  
+          <div id="Info_Cont2" class="ms-4">
+            <h4>SPACE COMPLEXITY</h4>
+  
+            <div
+              class="Complexity_Containers"
+              id="Space_Complexity_Types_Container"
+            >
+              <div class="Pair_Definitions">
+                <p class="Sub_Heading">Worst case:</p>
+                <p id="Space_Worst"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  
+      <script src="indxe.js"></script>
+      <script src="/scripts/Bubble.js"></script>
+      <script src="/scripts/Selection.js"></script>
+      <script src="/scripts/Insertion.js"></script>
+      <script src="/scripts/Helper.js"></script>
+      <script src="/scripts/Merge.js"></script>
+</body>
+</html>
