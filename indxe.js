@@ -67,8 +67,8 @@ function runAlgo()
                         break;
         case "Merge":Merge();
                         break;
-        // case "Quick":Quick();
-        //                 break;
+        case "Quick":Quick();
+                        break;
         // case "Heap":Heap();
         //                 break;
     }
